@@ -1,17 +1,13 @@
-public class Solution {
-    public long[] solution(int x, int n) {
-        int temp = 0;
+public class Solution
+{
+    public long[] solution(int x, int n)
+    {
         long[] answer = new long[n];
+        long temp = 0;
         for (int i = 0; i < n; i++)
         {
-            if (i == 0)
-            {
-                answer[i] = x;
-            }
-            else
-            {
-                answer[i] += answer[i - 1] + x;
-            }
+            answer[i] = temp + x;
+            temp += x;
         }
         return answer;
     }
