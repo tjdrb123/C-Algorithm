@@ -3,7 +3,7 @@ using System;
 public class Solution {
     public long solution(long n) {
         long answer = 0;
-        var num = Math.Sqrt(n);
+        double num = Math.Sqrt(n);
         
         if (num % 1 == 0)
         {
