@@ -4,12 +4,12 @@ public class Solution {
         int sum = 0;
         bool answer = true;
         
-        while (x > 0)
+        while (copyX > 0)
         {
-            sum += x % 10;
-            x /= 10;
+            sum += copyX % 10;
+            copyX /= 10;
         }
-        answer = copyX % sum == 0 ? true : false;
+        answer = x % sum == 0 ? true : false;
         return answer;
     }
 }
