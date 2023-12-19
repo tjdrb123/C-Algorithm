@@ -5,7 +5,7 @@ public class Solution {
          int answer = 0;
         for (int i = 0;  i < absolutes.Length; i++)
         {
-            answer = signs[i] ? answer + absolutes[i] : answer - absolutes[i];
+            answer += signs[i] ? absolutes[i] : -absolutes[i];
         }  
         return answer;
     }
