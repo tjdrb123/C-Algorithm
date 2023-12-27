@@ -4,11 +4,12 @@ public class Solution {
          string answer = "";
          if(s.Length % 2 == 0)
          {
-             return s.Substring(s.Length / 2 - 1, 2);
+             answer = s.Substring(s.Length / 2 - 1, 2);
          }
          else
          {
-             return s.Substring(s.Length / 2, 1);
+             answer = s.Substring(s.Length / 2, 1);
          }
+         return answer;
      }
 }
